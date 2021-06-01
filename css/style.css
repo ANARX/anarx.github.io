@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,600");
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background-color: #141217;
+}
+
+a {
+  color: #76687B;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #CFB6DD;
+  background: #8D807A50;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+a:before,
+a:after {
+  content: '';
+  background: #C5D9F4;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+a:before {
+  top: 0;
+  left: 0;
+}
+
+a:after {
+  top: 100%;
+  right: 0;
+}
+
+a:hover:before,
+a:hover:after {
+  width: 100%;
+}
+
+.secondary {
+  font-size: 0.85em;
+  line-height: 1em;
+  color: #888888;
+}
+
+.circle {
+  margin: 1.4em 0 0 0;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+}
+
+.block {
+  text-align: left;
+  margin: 1em;
+}
+
+.link {
+  line-height: 1.2em;
+  padding: 0.4em 0 0.4em 2.5em;
+  background: no-repeat 0 0.4em;
+}
+
+.linkedin {
+  background-image: url("../icon/linkedin.svg");
+}
+
+.github {
+  background-image: url("../icon/github.svg");
+}
+
+.gitlab {
+  background-image: url("../icon/gitlab.svg");
+}
+
+.telegram {
+  background-image: url("../icon/telegram.svg");
+}
+
+/* .instagram {
+    background-image: url("../icon/instagram.svg");
+}
+
+.email {
+    background-image: url("../icon/email.svg");
+} */
